@@ -8,30 +8,16 @@
     <link rel="stylesheet" href="./css/register.css" />
   </head>
   <body>
-    <a href="index.html" id="back"> Go back</a>s
+    <a href="index.html" id="back"> Go back</a>
     <div class="container">
       <input type="checkbox" id="check" />
-      <div class="login form">
-        <header>Admin Login</header>
-        <form action="#">
-          <input type="text" placeholder="Enter your username" />
-          <input type="password" placeholder="Enter your password" />
-          <a href="#">Forgot password?</a>
-          <input type="button" class="button" value="Login" />
-        </form>
-        <div class="signup">
-          <span class="signup"
-            >Don't have an account?
-            <label for="check">Signup</label>
-          </span>
-        </div>
-      </div>
-      <div class="registration form">
+
+      <div class="admin-registration form">
         <header>Admin Signup</header>
         <form action="#">
           <div>
-            <label class="input-label">School Name</label>
-            <input type="text" placeholder="School Name" />
+            <label class="input-label" id="school-label">School Name</label>
+            <input type="text" placeholder="School Name" id="school-name" />
           </div>
           <div>
             <label class="input-label">School Admin Code</label>
@@ -42,15 +28,11 @@
             <input type="password" placeholder="Qe0AQfdQA" readonly />
           </div>
 
-          <input type="button" class="button" value="Signup" />
+          <input type="button" class="button" value="Signup" id="admin" />
         </form>
-        <div class="signup">
-          <span class="signup"
-            >Already have an account?
-            <label for="check">Login</label>
-          </span>
-        </div>
+        <div class="signup"></div>
       </div>
     </div>
+    <script src="./js/validate.js"></script>
   </body>
 </html>

@@ -15,19 +15,19 @@
         <header>Teacher Login</header>
         <form action="#">
           <div>
-            <label class="input-label"> Name</label>
-            <input type="text" placeholder="Enter your name" />
+            <label class="input-label" id="student-label"> Name</label>
+            <input type="text" placeholder="Enter your name" id="student" />
           </div>
           <div>
-            <label class="input-label"> Password</label>
-            <input type="password" placeholder="Enter a password" />
+            <label class="input-label" id="pass-label"> Password</label>
+            <input type="password" placeholder="Enter a password" id="pass" />
           </div>
           <div>
             <label class="input-label"> School Admin Code</label>
             <input type="text" placeholder="Qe0AQf" readonly />
           </div>
           <a href="#">Forgot password?</a>
-          <input type="button" class="button" value="Login" />
+          <input type="button" class="button" value="Login" id="btn" />
         </form>
         <div class="signup">
           <span class="signup"
@@ -40,12 +40,16 @@
         <header>Teacher Signup</header>
         <form action="#">
           <div>
-            <label class="input-label"> Name</label>
-            <input type="text" placeholder="Enter your name" />
+            <label class="input-label" id="sign-name-label"> Name</label>
+            <input type="text" placeholder="Enter your name" id="sign-name" />
           </div>
           <div>
-            <label class="input-label"> Password</label>
-            <input type="password" placeholder="Enter a password" />
+            <label class="input-label" id="pass-label-2"> Password</label>
+            <input
+              type="password"
+              placeholder="Enter a password"
+              id="pass-sign"
+            />
           </div>
           <div>
             <label class="input-label"> Confirm Password</label>
@@ -56,7 +60,7 @@
             <input type="text" placeholder="Qe0AQf" readonly />
           </div>
 
-          <input type="button" class="button" value="Signup" />
+          <input type="button" class="button" value="Signup" id="btn-2" />
         </form>
         <div class="signup">
           <span class="signup"
@@ -66,5 +70,6 @@
         </div>
       </div>
     </div>
+    <script src="./js/validateTeacher.js"></script>
   </body>
 </html>
