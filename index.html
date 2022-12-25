@@ -15,7 +15,13 @@
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,34 +36,161 @@
       >
 
       <ul class="navbar">
-        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#home" class="active">Home</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
 
-      <div class="main">
+      <div class="menu">
         <div class="bx bx-menu" id="menu-icon"></div>
       </div>
     </header>
-    <div class="slideshow-container">
-      <div class="mySlides fade">
-        <img src="./assets/images/image-1.jpg" />
-        <div class="text">Teksti</div>
-      </div>
+    <div class="main">
+      <section id="home">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="./assets/images/image-1.jpg" />
+            <div class="text">
+              <h2>Learn from the best instructors</h2>
+              <p>
+                Our LMS provides access to high-quality courses from top
+                instructors in a variety of subjects.
+              </p>
+              <button id="sign-up">Sign Up Now</button>
+            </div>
+          </div>
 
-      <div class="mySlides fade">
-        <img src="./assets/images/image-2.jpg" />
-        <div class="text">Teksti</div>
-      </div>
+          <div class="mySlides fade">
+            <img src="./assets/images/image-2.jpg" />
+            <div class="text">
+              <h2>Learn from anyplace in the world</h2>
+              <p>Our LMS provides the ability to egadge in courses remote.</p>
+              <button id="sign-up">Sign Up Now</button>
+            </div>
+          </div>
 
-      <div class="mySlides fade">
-        <img src="./assets/images/image-3.jpg" />
-        <div class="text">Teksti 3</div>
-      </div>
+          <div class="mySlides fade">
+            <img src="./assets/images/image-3.jpg" />
+            <div class="text">Teksti 3</div>
+          </div>
+          <div class="mySlides fade">
+            <img src="./assets/images/image-3.jpg" />
+            <div class="text">
+              <h2>Learn with the best prices</h2>
+              <p>
+                LMS offers a variety of options on pricing and most desirable
+                discounts.
+              </p>
+              <button id="sign-up">Sign Up Now</button>
+            </div>
+          </div>
 
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </section>
+      <section class="register">
+        <p>Chose your role and be a part of us</p>
+        <button>Student</button>
+        <button>Teacher</button>
+        <button>Admin</button>
+      </section>
+      <section id="features">
+        <div class="container">
+          <h2>Features</h2>
+          <div class="feature">
+            <i class="fa-solid fa-people-arrows"></i>
+            <h3>Interactive Courses</h3>
+            <p>
+              Our courses are designed to be interactive and engaging, with
+              quizzes and exercises to help you retain information.
+            </p>
+          </div>
+          <div class="feature">
+            <i class="fa-solid fa-brain"></i>
+            <h3>Expert Instructors</h3>
+            <p>
+              All of our instructors are experts in their fields, with years of
+              experience and a passion for teaching.
+            </p>
+          </div>
+          <div class="feature">
+            <i class="fa-solid fa-rocket"></i>
+            <h3>Self-Paced Learning</h3>
+            <p>
+              Our courses are self-paced, so you can learn at your own speed and
+              on your own schedule.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="courses">
+        <div class="container">
+          <h2>Popular Courses</h2>
+          <div class="course">
+            <img src="./assets/images/img-4.jpg" alt="" />
+            <h3>Web Development</h3>
+            <p>
+              Learn the skills you need to build and maintain websites using
+              HTML, CSS, and JavaScript.
+            </p>
+          </div>
+          <div class="course">
+            <img src="./assets/images/img-5.jpg" alt="" />
+            <h3>Data Science</h3>
+            <p>
+              Learn the tools and techniques you need to analyze and visualize
+              data using Python and R.
+            </p>
+          </div>
+          <div class="course">
+            <img src="./assets/images/img-6.jpg" alt="" />
+            <h3>Marketing</h3>
+            <p>
+              Learn the principles of marketing and how to apply them to reach
+              and engage your target audience.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials">
+        <div class="container">
+          <h2>What Our Students Are Saying</h2>
+          <div class="testimonial">
+            <div class="testimonial__profile">
+              <img src="./assets/images/img-7.jpg" alt="Jane" />
+            </div>
+            <div class="testimonial__text">
+              <p>
+                "I have learned so much from this course. The instructor was
+                knowledgeable and engaging, and the material was well-organized
+                and easy to understand."
+              </p>
+              <p>- Jane Doe</p>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__profile">
+              <img src="./assets/images/img-8.jpg" alt="John" />
+            </div>
+            <div class="testimonial__text">
+              <p>
+                "I was skeptical about online learning at first, but this course
+                has exceeded my expectations. The interactive exercises and
+                discussions really helped me understand the material."
+              </p>
+              <p>- John Smith</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
+
+    <footer>
+      <div class="container">
+        <p id="copyright">Copyright 2021 Learning Management System</p>
+      </div>
+    </footer>
 
     <script type="text/javascript" src="js/script.js"></script>
   </body>
